@@ -13,10 +13,12 @@ def run_wsl_help() -> "subprocess.CompletedProcess[str]":
         FileNotFoundError: If the ``wsl`` executable is not found on the system.
     """
     return subprocess.run(
-        ["wsl", "--help"],
+        ["wsl", "--version"],
         capture_output=True,
         text=True,
         check=False,
+        encoding="locale",
+        errors="replace",
     )
 
 

@@ -5,12 +5,13 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "wslcontainer"
 authors = [{ name = "Fan Yang", email = "fanyangrocks@163.com" }]
-description = "Sample Python Wrapper of wslc"
+description = "Simple Python Wrapper of wslc"
 readme = "README.md"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -22,9 +23,9 @@ requires-python = ">=3.10"
 dynamic = ["version"]
 
 [project.urls]
-Documentation = "https://github.com/fanyangrocks/wslc/tree/main#readme"
-Source = "https://github.com/fanyangrocks/wslc"
-Tracker = "https://github.com/fanyangrocks/wslc/issues"
+Documentation = "https://github.com/fanyangrocks/wslcontainer/blob/main/README.md"
+Source = "https://github.com/fanyangrocks/wslcontainer"
+Tracker = "https://github.com/fanyangrocks/wslcontainer/issues"
 
 [tool.bandit]
 exclude_dirs = ["build", "dist", "tests", "scripts"]
